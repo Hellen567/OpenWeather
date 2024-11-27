@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OpenWeather.View.WeatherView"
+             Title="WeatherView">
+    <VerticalStackLayout>
+        <Entry Placeholder="Digite uma cidade" Text="{Binding Cidade}"/>
+
+        <Button Text="Buscar Clima" Command="{Binding GetWeatherCommand}"/>
+
+        <Label Text="{Binding Temperatura}" FontSize="20"/>
+        <Label Text="{Binding Descricao}" FontSize="14"/>
+    </VerticalStackLayout>
+</ContentPage>
